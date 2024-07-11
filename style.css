@@ -834,6 +834,7 @@ li {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+  transform: translate(100%, 100%);
 }
 
 .no-scroll {
@@ -848,4 +849,7 @@ li {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 1;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform: ;
 }
