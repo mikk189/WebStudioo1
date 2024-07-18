@@ -96,7 +96,6 @@ li {
   transition-property: background-color, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transform: scaleX(1.2);
 }
 
 .nav-link:hover {
@@ -437,9 +436,20 @@ li {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+@keyframes instagram {
+  0% {
+  }
+  25% {
+    transform: scale(0.75);
+  }
+  50% {
+    transform: scale(1.25) rotate(360deg);
+  }
+}
 .instagram:hover {
   fill: white;
+  animation-name: instagram;
+  animation-duration: 2s;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -851,5 +861,5 @@ li {
   opacity: 1;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transform: ;
+
 }
